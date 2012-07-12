@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Post a Message</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_pa_m__main">Post a Message</string>
+    <string name="post_message">Post a Message</string>
+    <string name="title_activity_pa_m__new__post">New Message Post</string>
+    <string name="new_post_button">Post a Message</string>
+    <string name="message_show">Your Message here</string>
+    <string name="username_text">Your username</string>
+
+</resources>

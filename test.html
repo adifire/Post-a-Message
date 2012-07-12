@@ -1,0 +1,21 @@
+<html>
+	<head><title>Post a Message</title></head>
+	<body>
+		<form action="/user" method="POST">
+			<div><input id="username" name="username" placeholder="Your username" type="text"/></div>
+			<input type="submit" value="Click to create ur username" />
+		</form>
+		<h2> Post a Message </h2>
+		<form action="/messages" method="POST">
+			<div> <input name="content" placeholder="Type your message here" type="text" /> </div>
+			<div> <input id="username" name="username" placeholder="Your username" type="text"/></div>
+			<input type="submit" value="Post the message!" />
+		</form>
+		<h2> Messages </h2>
+		<ul>
+			{% for m in messages %}
+			<li> <h4>{{ m.content }}</h4><span> by {{ m.owner }} date: {{ m.date_created }} </li>
+			{% endfor %}
+		</ul>
+	</body>
+</html>
